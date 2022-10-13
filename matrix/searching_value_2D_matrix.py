@@ -302,7 +302,7 @@ def simulate_death_probability(gender: str, current_age: int, future_age: int, d
     probability_value = matrix[row][column]
 
     # Calculating a Mortality Rate
-    mortality_rate = (deaths / (total_deaths*probability_value) )/ 1000
+    mortality_rate = (deaths / (total_deaths*probability_value) ) / 1000
 
     return {"gender":gender,"current_age":current_age,"future_age":future_age,"mortality_rate":mortality_rate}
 
